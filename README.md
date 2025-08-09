@@ -1,12 +1,12 @@
 # The Prompt-to-Production Marketing Asset Factory
 
-This repository is a powerful, reusable "factory" for anyone who wants to create professional marketing assets without being a traditional designer. It empowers technically-minded users (like Product Managers, Marketers, and Developers) to bridge the gap between modern AI prototyping tools and final, production-quality output.
+This repository is a simple, reusable "factory" for anyone who wants to create professional marketing assets without being a traditional designer. It empowers technically-minded users (like Product Managers, Marketers, and Developers) to bridge the gap between modern AI prototyping tools and final, production-quality output.
 
 **A strong design sense is recommended, though proficiency with design tools is not necessary.**
 
 ## The New Workflow: From Prompt to Asset
 
-This factory enables a new, powerful, two-step workflow for producing marketing assets:
+This factory enables a new, simpple, two-step workflow for producing marketing assets:
 
 1.  **Idea to Prototype (AI Tools)**: Use a prompt-based AI tool like **Lovable** or **Figma Make** to generate a visually appealing design and its corresponding React code. This bypasses the need for manual design skills on a traditional canvas.
 2.  **Prototype to Production (This Factory)**: Use this repository to take that generated code and produce a polished, professional asset in a variety of formats (PDF, PNG, SVG, etc.). This bypasses the need for a separate, manual production or export process.
