@@ -8,6 +8,6 @@
   "scripts": {
     "dev": "npm run dev -w renderer",
     "build": "npm run build -w renderer",
-    "generate-pdf": "npm run generate-pdf -w renderer --"
+    "generate": "npm run generate -w renderer --"
   }
 }

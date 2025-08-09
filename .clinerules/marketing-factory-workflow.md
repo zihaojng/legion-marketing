@@ -62,19 +62,26 @@ TARGET_PACKAGE=new-product-flyer npm run dev
 ```
 This will start a server, and you can view the rendered component at the local URL provided in the terminal.
 
-### 4. Generate the Final PDF
+### 4. Generate the Final Asset
 
-To generate a high-fidelity PDF of your package, run the following command from the **root directory**. This script will automatically start the server, generate the PDF, and then shut the server down.
+To generate a final asset from your package, run the following command from the **root directory**. This script will automatically start the server, generate the file, and then shut the server down.
 
-Replace `<package-name>` with the name of your package folder.
+You must specify the package name and the desired format.
+
+-   **Supported Formats**: `pdf`, `png`, `jpeg`, `webp`, `svg`
 
 ```bash
-npm run generate-pdf -- --package=<package-name>
+npm run generate -- --package=<package-name> --format=<format>
 ```
 
-**Example:**
+**PDF Example:**
 ```bash
-npm run generate-pdf -- --package=new-product-flyer
+npm run generate -- --package=brochure-2025 --format=pdf
 ```
 
-The final PDF will be saved in the **root directory** of the project, named after your package (e.g., `new-product-flyer.pdf`).
+**PNG Example:**
+```bash
+npm run generate -- --package=social-card --format=png
+```
+
+The final asset will be saved in the **root directory** of the project, named after your package with the correct file extension (e.g., `brochure-2025.pdf`).
