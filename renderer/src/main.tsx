@@ -10,7 +10,7 @@ if (!targetPackage) {
 }
 
 // Dynamically import the App component from the target package
-const App = lazy(() => import(`@current-package/App.tsx`));
+const App = lazy(() => import(`@current-package/src/App.tsx`));
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
