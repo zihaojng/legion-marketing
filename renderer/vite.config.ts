@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => {
   console.log(`Vite is targeting package: ${targetPackage}`);
 
   return {
+    publicDir: path.resolve(__dirname, `../packages/${targetPackage}/public`),
     resolve: {
       alias: {
         '@current-package': path.resolve(__dirname, `../packages/${targetPackage}`),
