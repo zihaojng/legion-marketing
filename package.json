@@ -6,8 +6,11 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev -w renderer",
-    "build": "npm run build -w renderer",
+    "dev": "node scripts/run-package-script.js",
+    "build": "node scripts/run-package-script.js",
     "generate": "npm run generate -w renderer --"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0"
   }
 }

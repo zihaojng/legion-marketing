@@ -53,16 +53,24 @@ To start a live-reloading development server and preview your new package in a w
 Replace `<package-name>` with the name of your new package folder.
 
 ```bash
-TARGET_PACKAGE=<package-name> npm run dev
+npm run dev -- <package-name>
 ```
 
 **Example:**
 ```bash
-TARGET_PACKAGE=new-product-flyer npm run dev
+npm run dev -- new-product-flyer
 ```
 This will start a server, and you can view the rendered component at the local URL provided in the terminal.
 
-### 4. Generate the Final Asset
+### 4. Build for Production
+
+To build a package for production, run the following command from the **root directory**:
+
+```bash
+npm run build -- <package-name>
+```
+
+### 5. Generate the Final Asset
 
 To generate a final asset from your package, run the following command from the **root directory**. This script will automatically start the server, generate the file, and then shut the server down.
 
