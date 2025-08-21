@@ -1,8 +1,6 @@
 export default function App() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-[#0a0a0a] via-[#1a0a1a] to-[#0a0a0a] flex items-center justify-center p-4">
-      {/* A4 Aspect Ratio Wrapper */}
-      <div className="w-full h-full max-w-[70.7vh] aspect-[1/1.4142]">
+    <div className="w-full h-full max-w-[70.7vh] aspect-[1/1.4142]">
         {/* Brochure Container */}
         <div className="w-full h-full bg-gradient-to-br from-[#1a1a1a] to-[#2a1a2a] shadow-2xl border border-[#66023c]/30 overflow-hidden flex flex-col">
           
@@ -220,7 +218,6 @@ export default function App() {
           </div>
         </div>
         </div>
-      </div>
-    </div>
+        </div>
   );
 }

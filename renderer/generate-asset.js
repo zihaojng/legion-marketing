@@ -4,7 +4,8 @@ import path from 'path';
 import fs from 'fs/promises';
 
 const PORT = 5175;
-const URL = `http://localhost:${PORT}`;
+const BASE_URL = `http://localhost:${PORT}`;
+const PREVIEW_URL = `${BASE_URL}?preview=true`;
 
 // --- Helper Functions ---
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -24,7 +25,7 @@ const getArgValue = (argName, defaultValue = null) => {
 const isServerReady = async (retries = 15, delay = 1000) => {
   for (let i = 0; i < retries; i++) {
     try {
-      const response = await fetch(URL);
+      const response = await fetch(BASE_URL);
       if (response.ok) {
         console.log('✅ Server is ready.');
         return true;
@@ -61,10 +62,13 @@ const isServerReady = async (retries = 15, delay = 1000) => {
     console.log('🚀 Launching Puppeteer...');
     browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
-    await page.setViewport({ width: 1200, height: 800, deviceScaleFactor: 2 }); // High-res screenshots
+    
+    // Set a viewport that matches A4 aspect ratio for PDF generation
+    // A4 is 210mm x 297mm. Let's use a high-res version of that.
+    await page.setViewport({ width: 1123, height: 1588, deviceScaleFactor: 2 });
 
-    console.log(`Navigating to ${URL}`);
-    await page.goto(URL, { waitUntil: 'networkidle0' });
+    console.log(`Navigating to ${PREVIEW_URL}`);
+    await page.goto(PREVIEW_URL, { waitUntil: 'networkidle0' });
     await sleep(1000);
 
     const element = await page.$(selector);
