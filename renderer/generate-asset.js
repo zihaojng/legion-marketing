@@ -78,7 +78,7 @@ const isServerReady = async (retries = 15, delay = 1000) => {
       case 'pdf':
         await page.pdf({
           path: outputPath,
-          width: '1200px',
+          format: 'A4',
           printBackground: true,
           scale: 1,
         });
