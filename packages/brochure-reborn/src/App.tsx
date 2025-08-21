@@ -52,7 +52,7 @@ export default function App() {
 
             <div>
               <div className="flex items-center gap-x-4 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-[#ffd700] to-[#b8860b] flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-gradient-to-br from-[#ffd700] to-[#b8860b] flex items-center justify-center flex-shrink-0 rounded-md">
                   <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0C12 0 12 12 24 12C12 12 12 24 12 24C12 24 12 12 0 12C12 12 12 0 12 0Z" />
                   </svg>
@@ -61,8 +61,8 @@ export default function App() {
               </div>
               <div className="space-y-4">
                 <div>
-                  <div className="flex items-center">
-                    <svg className="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     <p className="text-lg text-gray-400">Days lost in drafting</p>
                   </div>
                   <div className="flex items-start mt-1">
@@ -71,8 +71,8 @@ export default function App() {
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center">
-                    <svg className="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                     <p className="text-lg text-gray-400">Constant rewrites</p>
                   </div>
                   <div className="flex items-start mt-1">
@@ -81,9 +81,9 @@ export default function App() {
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center">
-                    <svg className="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    <p className="text-lg text-gray-400">Rising client expectations</p>
+                  <div className="flex items-start">
+                    <svg className="w-5 h-5 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    <p className="text-lg text-gray-400">Hiring, training, retaining juniors</p>
                   </div>
                   <div className="flex items-start mt-1">
                     <svg className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
@@ -109,7 +109,7 @@ export default function App() {
           {/* Center Panel - AI Document Drafting */}
           <div className="bg-gradient-to-b from-[#1a1a1a] to-[#2a1a2a] p-6 border-r border-[#66023c]/20">
             <div className="text-center mb-6">
-              <h2 className="text-xl font-bold text-white mb-2">AI Drafting</h2>
+              <h2 className="text-xl font-bold text-white mb-1">AI Drafting</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
 
@@ -135,7 +135,7 @@ export default function App() {
             </div>
 
             <div className="text-center mt-6">
-              <h2 className="text-xl font-bold text-white mb-2">Coming Soon</h2>
+              <h2 className="text-xl font-bold text-white mb-1">Coming Soon</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
             <div>
@@ -154,12 +154,12 @@ export default function App() {
           {/* Right Panel - Pricing & Contact */}
           <div className="bg-gradient-to-b from-[#2a1a2a] to-[#1a1a1a] p-6">
             <div className="text-center mb-6">
-              <h2 className="text-xl font-bold text-white mb-2">No Subscription</h2>
+              <h2 className="text-xl font-bold text-white mb-1">No Subscription</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
 
             <div className="space-y-4 mb-6">
-              <div className="bg-gradient-to-br from-[#ffd700]/20 to-[#b8860b]/10 p-4 border-2 border-[#ffd700]/50 relative">
+              <div className="bg-gradient-to-br from-[#ffd700]/20 to-[#b8860b]/10 p-2 border-2 border-[#ffd700]/50 relative">
                 <div className="text-center">
                   
                   <div className="text-2xl font-bold text-white mb-1">$10<span className="text-base text-white">/page</span></div>
@@ -168,22 +168,22 @@ export default function App() {
                 <ul className="space-y-1 text-lg text-white">
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-[#ffd700] mr-2 flex-shrink-0"></div>
-                    You see what you get
+                    Draft first
                   </li>
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-[#ffd700] mr-2 flex-shrink-0"></div>
-                    Only pay to download
+                    Pay last
                   </li>
                   <li className="flex items-center">
                     <div className="w-3 h-3 bg-[#ffd700] mr-2 flex-shrink-0"></div>
-                    First three docs on us
+                    First 3 docs on us
                   </li>
                   
                 </ul>
               </div>
             </div>
             <div className="text-center mb-6">
-              <h2 className="text-xl font-bold text-white mb-2">Easy to get started</h2>
+              <h2 className="text-xl font-bold text-white mb-1">Easy to get started</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
             <div>
@@ -203,6 +203,11 @@ export default function App() {
                 Book a test drive today at legion.law
               </h3>
             </div>
+
+            <div className="text-right mt-4">
+              <p className="text-xs text-[#ffd700] font-semibold">© 2025 Legion Legaltech, Corp.</p>
+              <p className="text-xs text-white/80">All rights reserved</p>
+            </div>
           </div>
         </div>
 
@@ -211,8 +216,6 @@ export default function App() {
           <div className="flex justify-between items-center text-white">
             
             <div className="text-right">
-              <p className="text-[#ffd700] font-semibold">© 2025 Legion Legaltech, Corp.</p>
-              <p className="text-base text-white/80 text-left">All rights reserved</p>
             </div>
           </div>
         </div>
