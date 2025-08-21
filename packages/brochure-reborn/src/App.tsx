@@ -13,7 +13,7 @@ export default function App() {
             <img src="/small white.png" alt="Legion Logo" className="h-12 mb-2" />
             <p className="text-white text-base font-bold">Actually reliable litigation drafting — at AI speed.</p>
           </div>
-          <div className="relative z-10 text-right">
+          <div className="relative z-10 text-right mt-8">
             <p className="text-white text-base font-bold">Contact Us</p>
             <p className="text-gold text-base font-semibold">support@legion.law</p>
           </div>
@@ -23,10 +23,10 @@ export default function App() {
         <div className="grid grid-cols-3 flex-grow">
           
           {/* Left Panel - Hero & Key Benefits */}
-          <div className="bg-gradient-to-b from-[#2a1a2a] to-[#1a1a1a] p-6 border-r border-[#66023c]/20">
+          <div className="bg-gradient-to-b from-[#2a1a2a] to-[#1a1a1a] p-4 border-r border-[#66023c]/20 text-center">
             <div className="mb-8">
               <div className="flex items-center mb-4">
-                <h2 className="text-2xl font-bold text-gold max-w-sm">
+                <h2 className="text-2xl font-bold text-gold max-w-sm mx-auto">
                   Still drafting litigation docs{" "}
                   <span className="relative inline-block">
                     the hard way?
@@ -50,7 +50,7 @@ export default function App() {
               </div>
             </div>
 
-            <div>
+            <div className="text-left">
               <div className="flex items-center gap-x-4 mb-4">
                 <div className="w-8 h-8 bg-gradient-to-br from-[#ffd700] to-[#b8860b] flex items-center justify-center flex-shrink-0 rounded-md">
                   <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@ export default function App() {
           </div>
 
           {/* Center Panel - AI Document Drafting */}
-          <div className="bg-gradient-to-b from-[#1a1a1a] to-[#2a1a2a] p-6 border-r border-[#66023c]/20">
+          <div className="bg-gradient-to-b from-[#1a1a1a] to-[#2a1a2a] p-4 border-r border-[#66023c]/20">
             <div className="text-center mb-6">
               <h2 className="text-xl font-bold text-white mb-1">AI Drafting</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
@@ -134,11 +134,11 @@ export default function App() {
               </div>
             </div>
 
-            <div className="text-center mt-6">
-              <h2 className="text-xl font-bold text-white mb-1">Coming Soon</h2>
+            <div className="text-center mt-8">
+              <h2 className="text-xl font-bold text-white mb-2">Coming Soon</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
-            <div>
+            <div className="mt-3">
               <h3 className="text-gold font-semibold text-lg mb-2">Motion</h3>
               <ul className="space-y-1 text-lg text-white">
                 <li>MPAs</li>
@@ -152,7 +152,7 @@ export default function App() {
           </div>
 
           {/* Right Panel - Pricing & Contact */}
-          <div className="bg-gradient-to-b from-[#2a1a2a] to-[#1a1a1a] p-6">
+          <div className="bg-gradient-to-b from-[#2a1a2a] to-[#1a1a1a] p-4">
             <div className="text-center mb-6">
               <h2 className="text-xl font-bold text-white mb-1">No Subscription</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
@@ -182,8 +182,8 @@ export default function App() {
                 </ul>
               </div>
             </div>
-            <div className="text-center mb-6">
-              <h2 className="text-xl font-bold text-white mb-1">Easy to get started</h2>
+            <div className="text-center mb-4">
+              <h2 className="text-xl font-bold text-white mb-2">Easy to get started</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
             <div>
@@ -198,7 +198,7 @@ export default function App() {
             </div>
 
             {/* Contact Information */}
-            <div className="bg-gradient-to-br from-[#66023c]/10 to-[#8b1655]/5 p-4 border border-[#66023c]/20">
+            <div className="bg-gradient-to-br from-[#66023c]/10 to-[#8b1655]/5 p-4 border border-[#66023c]/20 mt-4">
               <h3 className="text-gold font-bold mb-2 text-center text-2xl">
                 Book a test drive today at legion.law
               </h3>
