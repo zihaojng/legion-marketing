@@ -114,7 +114,7 @@ export default function App() {
             </div>
 
             <div className="space-y-4">
-              <div className="bg-gradient-to-r from-[#66023c]/10 to-[#8b1655]/5 p-4 border border-[#66023c]/20">
+              <div>
                 <h3 className="text-gold font-semibold text-lg mb-2">Pleading</h3>
                 <ul className="space-y-1 text-lg text-white">
                   <li>Complaint</li>
@@ -124,7 +124,7 @@ export default function App() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-r from-[#66023c]/10 to-[#8b1655]/5 p-4 border border-[#66023c]/20">
+              <div>
                 <h3 className="text-gold font-semibold text-lg mb-2">Discovery</h3>
                 <ul className="space-y-1 text-lg text-white">
                   <li>SROGs, RFPs, RFAs, (Propounding and Responding)</li>
@@ -138,7 +138,7 @@ export default function App() {
               <h2 className="text-xl font-bold text-white mb-2">Coming Soon</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
-            <div className="bg-gradient-to-r from-[#66023c]/10 to-[#8b1655]/5 p-4 border border-[#66023c]/20 mt-4">
+            <div>
               <h3 className="text-gold font-semibold text-lg mb-2">Motion</h3>
               <ul className="space-y-1 text-lg text-white">
                 <li>MPAs</li>
@@ -186,7 +186,7 @@ export default function App() {
               <h2 className="text-xl font-bold text-white mb-2">Easy to get started</h2>
               <div className="w-12 h-1 bg-gradient-to-r from-[#ffd700] to-[#b8860b] mx-auto"></div>
             </div>
-            <div className="bg-gradient-to-r from-[#66023c]/10 to-[#8b1655]/5 p-4 border border-[#66023c]/20 mb-6">
+            <div>
               <h3 className="text-gold font-semibold text-lg mb-2">To Sign Up</h3>
               <ul className="space-y-1 text-lg text-white">
                 <li>Bring your own case, do a test drive</li>
