@@ -229,4 +229,5 @@
 
 html {
   font-size: var(--font-size);
+  -webkit-print-color-adjust: exact;
 }

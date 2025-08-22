@@ -1,6 +1,5 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/globals.css';
 
 // Vite's define plugin makes this variable available
 const targetPackage = process.env.TARGET_PACKAGE;

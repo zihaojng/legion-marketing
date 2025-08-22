@@ -63,13 +63,34 @@ const isServerReady = async (retries = 15, delay = 1000) => {
     browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
     
-    // Set a viewport that matches A4 aspect ratio for PDF generation
-    // A4 is 210mm x 297mm. Let's use a high-res version of that.
-    await page.setViewport({ width: 1123, height: 1588, deviceScaleFactor: 2 });
+    // Set viewport to match the PDF width exactly
+    await page.setViewport({ width: 1200, height: 1600, deviceScaleFactor: 2 });
+    
+    // Emulate screen media type to ensure we get the same styles as the browser
+    await page.emulateMediaType('screen');
 
     console.log(`Navigating to ${PREVIEW_URL}`);
     await page.goto(PREVIEW_URL, { waitUntil: 'networkidle0' });
-    await sleep(1000);
+    
+    // Wait for Tailwind CSS to fully load and apply
+    await page.waitForSelector('.grid-cols-3', { timeout: 5000 });
+    
+    // Force the grid to render properly by injecting CSS that ensures grid-cols-3 works
+    await page.addStyleTag({
+      content: `
+        @media print {
+          .grid-cols-3 {
+            grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+          }
+          * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+        }
+      `
+    });
+    
+    await page.evaluateHandle('document.fonts.ready');
 
     const element = await page.$(selector);
     if (!element && (format === 'png' || format === 'jpeg' || format === 'webp' || format === 'svg')) {
@@ -82,9 +103,13 @@ const isServerReady = async (retries = 15, delay = 1000) => {
       case 'pdf':
         await page.pdf({
           path: outputPath,
-          format: 'A4',
+          width: '1200px',
+          height: '1600px',
           printBackground: true,
           scale: 1,
+          preferCSSPageSize: false,
+          displayHeaderFooter: false,
+          margin: { top: 0, right: 0, bottom: 0, left: 0 },
         });
         break;
 
